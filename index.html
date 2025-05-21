@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voting DApp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Voting DApp</h1>
+
+    <button id="connectButton">🔗 Connect Wallet</button>
+    <p id="walletAddress">Not connected</p>
+
+    <h2>Candidates</h2>
+    <div id="candidatesList" class="card"></div>
+
+    <div class="voting-controls">
+      <input type="number" id="voteIndex" placeholder="Candidate index" />
+      <button id="voteButton">✅ Vote</button>
+    </div>
+
+    <h2>Admin</h2>
+    <div class="admin-controls">
+      <button id="endButton">🛑 End Election</button>
+      <button id="winnerButton">🎉 Get Winner</button>
+      <button id="resetButton">🔄 Reset Election</button>
+      <p id="winnerResult"></p>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
