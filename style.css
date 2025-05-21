@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fa;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="number"] {
+  padding: 10px;
+  width: 60%;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.candidate, .card {
+  background: #f1f1f1;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.voting-controls, .admin-controls {
+  margin-top: 20px;
+}
+
+#walletAddress {
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+  color: #333;
+}
+
+#winnerResult {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #28a745;
+  font-weight: bold;
+}
